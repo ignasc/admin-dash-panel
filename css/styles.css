@@ -1,0 +1,7 @@
+.main-container > * {
+    border: 1px solid black;
+}
+
+img {
+    height: 20px;
+}
