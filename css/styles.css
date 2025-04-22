@@ -40,11 +40,28 @@ img {
     grid-column: 1 / 2;
     grid-row: 1 / -2;
 
+    padding: var(--general_padding);
     display: grid;
-    grid-column: 1fr;
-    grid-row: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, max-content);
+    gap: 50px;
+}
+
+.sidebar-header {
+    justify-self: center;
+}
+
+.sidebar > ul {
+    display: grid;
+    gap: 10px;
+}
+
+.sidebar > ul > li > a {
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: 1fr;
+    gap: 10px;
 }
 
 .content {
