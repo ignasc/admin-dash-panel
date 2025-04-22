@@ -14,8 +14,8 @@ img {
     padding: var(--general_padding);
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 5fr;
-    grid-template-rows: max-content 1fr 1fr;
-    gap: 20px;
+    grid-template-rows: max-content 1fr max-content;
+    gap: 5px;
 }
 
 .header {
@@ -219,4 +219,13 @@ img {
     background-color: chartreuse;
     grid-column: 1 / -1;
     grid-row: -2 / -1;
+
+    height: 2rem;
+    text-align: center;
+    align-content: center;
+}
+
+.footer a {
+    font-style: italic;
+    text-decoration: underline;
 }
