@@ -5,3 +5,142 @@
 img {
     height: 20px;
 }
+
+:root {
+    --general_padding: 10px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 5fr;
+    grid-template-rows: 100px 1fr 50px;
+}
+
+.header {
+    background-color: aqua;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.header > * {
+    background-color: beige;
+
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.sidebar {
+    background-color: burlywood;
+    grid-column: 1 / 2;
+    grid-row: 1 / -2;
+
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: chocolate;
+    grid-column: 2 / -1;
+    grid-row: 2 / -2;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content-projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    
+    padding: var(--general_padding);
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    gap: 20px;
+}
+
+.content-projects > h1 {
+    grid-row: 1 / 2;
+}
+
+.project-list {
+    grid-row: 2 / -1;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, max-content));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: blue;
+    
+    padding: var(--general_padding);
+    display: grid;
+    grid-template-rows: 1rem 3fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-info {
+    grid-column: -2 / -1;
+    grid-row: 1 / 2;
+
+    padding: var(--general_padding);
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    gap: 20px;
+}
+
+.announcements {
+    display: grid;
+    gap: 20px;
+}
+
+.announce-card {
+    background-color: brown;
+    
+    padding: var(--general_padding);
+    display: grid;
+    gap: 10px;
+}
+
+.content-trends {
+    grid-column: -2 / -1;
+    grid-row: 2 / -1;
+    
+    padding: var(--general_padding);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+    gap: 20px;
+}
+
+.trend-list {
+    grid-row: 2 / -1;
+
+    display: grid;
+    gap: 20px;
+}
+
+.trend-card {
+    background-color: blue;
+
+    padding: var(--general_padding);
+    display: grid;
+    gap: 0.2rem;
+}
+
+.footer {
+    background-color: chartreuse;
+    grid-column: 1 / -1;
+    grid-row: -2 / -1;
+}
