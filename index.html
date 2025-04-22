@@ -12,19 +12,22 @@
     <div class="main-container">
 
         <div class="header">
-            <div class="search-bar">
-                <img src="./img/magnify.svg" alt="search icon">
-                <p>Search bar</p>
-            </div>
+            <form id="search-form" class="search-bar" action="#" method="post">
+                <button type="submit" form="search-form" value="Submit">
+                    <img src="./img/magnify.svg" alt="search icon">
+                </button>
+                <input type="text" name="search-query" placeholder="Type to search...">
+            </form>
 
             <div class="header-user">
                 <img src="./img/emoticon-happy-outline.svg" alt="profile photo">
                 <div class="user-name">User Name</div>
             </div>
 
-            <div class="greeting-message">
+            <div class="header-greeting-message">
                 <img src="./img/emoticon-happy-outline.svg" alt="profile photo">
-                <p>Hi there, <br> <span>User Name (@UserName)</span></p>
+                <p id="hi-message">Hi there,</p>
+                <p id="hi-user-name">User Name (@UserName)</p>
             </div>
 
             <div class="header-file-control">
