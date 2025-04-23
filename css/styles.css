@@ -40,11 +40,15 @@ img {
 }
 
 #search-form {
-    padding: var(--general_padding);
     display: grid;
     grid-template-columns: max-content 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
+    align-items: center;
+}
+
+#search-form > * {
+    grid-row: 1 / -1;
 }
 
 .header-user {
@@ -55,6 +59,7 @@ img {
     gap: 10px;
     font-size: 1.2rem;
     font-weight: 700;
+    align-items: center;
 }
 
 .header-greeting-message {
@@ -92,10 +97,12 @@ img {
     display: grid;
     grid-template-columns: repeat(3, max-content);
     gap: 20px;
+    align-items: center;
 }
 
 .header-file-control > button {
-    width: max-content;
+    width: 4rem;
+    height: 1.5rem;
 }
 
 .sidebar {
