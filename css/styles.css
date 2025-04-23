@@ -60,13 +60,13 @@ img {
 .header-greeting-message {
     display: grid;
     grid-template-columns: max-content 1fr;
-    grid-template-rows: max-content 1fr;
+    grid-template-rows: 1fr 2fr;
 }
 
 .header-greeting-message > img {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
-    height: 2rem;
+    height: 60px;
 }
 
 #hi-message {
@@ -74,6 +74,8 @@ img {
     grid-row: 1 / 2;
     font-size: 0.8rem;
     font-weight: 400;
+    align-content: end;
+    padding-left: 20px;
 }
 
 #hi-user-name {
@@ -81,6 +83,8 @@ img {
     grid-row: 2 / -1;
     font-size: 1.2rem;
     font-weight: 700;
+    align-content: center;
+    padding-left: 20px;
 }
 
 .header-file-control {
