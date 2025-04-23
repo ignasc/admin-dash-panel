@@ -1,5 +1,14 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto_Condensed-Regular.ttf);
+}
+
 :root {
     --general_padding: 10px;
+}
+
+body {
+    font-family: "Roboto", Times, serif;
 }
 
 .main-container {
@@ -113,7 +122,9 @@
 }
 
 .sidebar-header {
+    padding: var(--general_padding);
     justify-self: center;
+    font-size: 1.5rem;
 }
 
 .sidebar > ul {
